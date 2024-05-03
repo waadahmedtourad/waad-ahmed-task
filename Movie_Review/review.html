@@ -1,0 +1,3036 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Movie Review
+    </title>
+    <style>
+        body {
+            color: #333;
+            background-color: white;
+        }
+
+        div.divhead {
+            width: 100%;
+            height: 42.8px;
+            opacity: 1;
+            visibility: visible;
+            animation-name: animation-5j8bii;
+            animation-duration: 300ms;
+            animation-delay: 0ms;
+            text-size-adjust: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        div.divhead header {
+            width: 100%;
+            height: 42.8px;
+            position: relative;
+            border-top: 1px solid #e2e2e2;
+            border-bottom: 1px solid #e2e2e2;
+            display: block;
+        }
+
+        div.mydiv1 .mybutton1 {
+            border: 0px;
+            display: inline-block;
+            margin-right: 8px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            white-space: nowrap;
+            vertical-align: middle;
+            background-color: #fff;
+            padding: 8px 9px 9px;
+            width: 34px;
+            height: 33px;
+        }
+
+        div.mydiv1 .mybutton1 img {
+            width: 16px;
+            height: 16px;
+
+        }
+
+        div.mydiv1 .mybutton2 {
+            width: 34px;
+            height: 33px;
+            background-color: #f7f7f7;
+            padding: 8px 9px 9px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            white-space: nowrap;
+            vertical-align: middle;
+            color: #000;
+            border: 0px;
+            margin-top: -4px;
+        }
+
+        div.mydiv1 .mybutton2 img {
+            width: 27px;
+            height: 25px;
+            margin-top: -4px;
+            margin-left: -5px;
+        }
+
+        div.mydiv1 .input1 {
+            width: 223px;
+            height: 33px;
+            background-color: #ffffff;
+            padding: 10px;
+            margin-right: 4px;
+            letter-spacing: 0.5px;
+            box-sizing: border-box;
+            color: rgb(102, 102, 102);
+            font-size: 1rem;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            line-height: 16px;
+            border-radius: 3px;
+            border: 1px solid rgb(226, 226, 226);
+            margin-top: 5px;
+        }
+
+        div.mydiv1 .go {
+            width: 34px;
+            height: 33px;
+            padding: 7px 9px 6px;
+            background-color: rgb(107, 135, 155);
+            font: 10px 'nyt-franklin', Arial, Helvetica, sans-serif;
+            color: #fff;
+            font-weight: bold;
+            ;
+            border-radius: 3px;
+            border: 1px solid rgb(83, 120, 148);
+            line-height: 11px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin: 0px;
+            vertical-align: middle;
+            white-space: nowrap;
+
+        }
+
+        div.mydiv1 .go a {
+            text-decoration: none;
+            color: #e2e2e2;
+        }
+
+        div.mydiv1 .go:disabled {
+            cursor: default;
+            opacity: 0.5;
+        }
+
+        div.mydiv2 {
+            width: 194px;
+            height: 27px;
+            color: #000;
+            text-align: center;
+            margin-top: -27px;
+            margin-left: 620px;
+        }
+
+        div.mydiv2 a {
+            text-decoration: none;
+        }
+
+        div.mydiv2 img {
+            width: 194px;
+            height: 27px;
+
+        }
+
+        div.mydiv3 {
+            width: 272px;
+            height: 29px;
+            top: 4px;
+            display: flex;
+            position: absolute;
+            right: 10px;
+            justify-content: space-around;
+            float: right;
+        }
+
+        div.mydiv3 .button3 {
+            width: 188px;
+            height: 29px;
+            border-radius: 3px;
+            cursor: pointer;
+            border: 1px solid rgb(50, 104, 145);
+            white-space: nowrap;
+            vertical-align: middle;
+            background-color: #567b95;
+            margin-right: 7px;
+        }
+
+        div.mydiv3 .button3 a {
+            text-decoration: none;
+            color: #ffffff;
+            height: 11px;
+            padding: 8px 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 700;
+            line-height: 11px;
+            font: 11px 'nyt-franklin', Arial, Helvetica, sans-serif;
+            margin-left: -9px;
+        }
+
+        div.mydiv3 .button4 {
+            width: 63px;
+            height: 29px;
+            border-radius: 3px;
+            cursor: pointer;
+            border: 1px solid rgb(50, 104, 145);
+            white-space: nowrap;
+            vertical-align: middle;
+            background-color: #567b95;
+            margin-right: 7px;
+
+        }
+
+        div.mydiv3 .button4 a {
+            text-decoration: none;
+            color: #ffffff;
+            height: 11px;
+            padding: 8px 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 700;
+            line-height: 11px;
+            font: 11px 'nyt-franklin', Arial, Helvetica, sans-serif;
+            margin-left: -9px;
+        }
+
+        div.divt {
+            width: 960px;
+            height: 134px;
+            margin: 2px 25px 0px;
+            display: block;
+        }
+
+        div.mydiv4 {
+            width: 960px;
+            height: 30px;
+            display: flex;
+            flex-direction: row-reverse;
+            margin-bottom: 0px;
+            margin-top: 4px;
+        }
+
+        div.mydiv4 a {
+            color: #121212;
+            text-decoration: none;
+            font: 12px 'nyt-karnak', georgia, 'times new roman', times, serif;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-right: 800px;
+            text-transform: uppercase;
+        }
+
+        div.mydiv5 {
+            width: 960px;
+            height: 89px;
+            flex: 1 75%;
+            margin-left: 105px;
+            margin-top: 25px;
+        }
+
+        div.divh {
+            width: 960px;
+            height: 52px;
+            flex-direction: unset;
+
+
+        }
+
+        div.divh h1 {
+            width: 960px;
+            height: 42px;
+            color: #121212;
+            font: 36px 'nyt-karnak', georgia, 'times new roman', times, serif;
+            margin: 10px 0px 0px;
+            line-height: 42px;
+            font-feature-settings: "kern";
+            font-weight: bold;
+            -webkit-font-smoothing: antialiased;
+            flex: 1 75%;
+
+        }
+
+        div.mydiv5 h2 {
+            width: 705px;
+            height: 23px;
+            font-size: 17px;
+            line-height: 23px;
+            margin: 14px 0px 0px;
+            color: #727272;
+            -webkit-font-smoothing: antialiased;
+            letter-spacing: 0.17px;
+            font-family: 'nyt-cheltenham', georgia, 'times new roman', times, serif;
+        }
+
+        div.mydiv5 h2 span {
+            width: 510px;
+            color: #727272;
+            font: 17px 'nyt-cheltenham', georgia, 'times new roman', times, serif;
+        }
+
+        div.div1 {
+            width: 960px;
+            height: 77px;
+            padding-bottom: 15px;
+            margin-bottom: 18px;
+            border-bottom: 1px solid #e2e2e2;
+            border-top: 2px solid #000;
+            margin-top: 200px;
+            margin-left: 125px;
+        }
+
+        div.div1 form {
+            width: 960px;
+            height: 37px;
+            margin-top: 22px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            display: flex;
+
+        }
+
+        div.div12 {
+            width: 225px;
+            height: 25px;
+            color: #333333;
+            font: 16px 'Times New Roman';
+            padding: 5px 15px;
+            align-items: center;
+            display: flex;
+            -webkit-box-align: center;
+            position: relative;
+            border-radius: 3px;
+            border: 1px solid #d2d1d1;
+            margin-right: 12px;
+        }
+
+        div.div12 img {
+            width: 16px;
+            height: 16px;
+            margin-right: 7px;
+            font-style: normal;
+        }
+
+        div.div12 input {
+            width: 155px;
+            height: 24px;
+            border: none;
+            box-sizing: border-box;
+            padding: 1px 0px 0px;
+        }
+
+        div.div2 {
+            width: 557px;
+            height: 37px;
+            border-left: 1px solid #d2d1d1;
+            display: flex;
+            flex-grow: 1px;
+            flex-wrap: wrap;
+            -webkit-box-flex: 1;
+            justify-content: space-between;
+            -webkit-box-pack: justify;
+            border-right: 1px solid #d2d1d1;
+        }
+
+        div.div22 {
+            width: 245px;
+            height: 37px;
+        }
+
+        div.div22 select {
+            width: 246px;
+            height: 37px;
+            background-color: #fff;
+            border: 1px solid #d2d1d1;
+            border-radius: 1px;
+            color: #666;
+            cursor: pointer;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 2.25rem;
+            margin: 0px;
+            padding: 0px 25px 0px 12px;
+            text-overflow: ellipsis;
+            vertical-align: middle;
+            margin-left: 8px;
+        }
+
+
+        div.div23 {
+            width: 245px;
+            height: 37px;
+        }
+
+        div.div23 select {
+            width: 246px;
+            height: 37px;
+            background-color: #fff;
+            border: 1px solid #d2d1d1;
+            border-radius: 1px;
+            color: #666;
+            cursor: pointer;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 2.25rem;
+            margin: 0px;
+            padding: 0px 25px 0px 12px;
+            text-overflow: ellipsis;
+            vertical-align: middle;
+            margin-left: -10px;
+        }
+
+        div.div24 {
+            display: block;
+            width: 154px;
+            height: 37px;
+            padding: 0px 0px 0px 15px;
+            flex: 0 177px;
+            margin-top: 7px;
+
+        }
+
+        div.div24 input {
+            width: 14px;
+            height: 14px;
+            border: none;
+            line-height: normal;
+            vertical-align: middle;
+
+        }
+
+        div.div24 img {
+            width: 17px;
+            height: 17px;
+            padding-left: 5px;
+
+
+        }
+
+        div.div24 span {
+            width: 96px;
+            height: 14px;
+            color: #666666;
+            font: 14px 'nyt-franklin', Arial, Helvetica, sans-serif;
+            margin-left: 3px;
+        }
+
+        div.div3 {
+            width: 1200px;
+            height: 5430px;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 85px;
+        }
+
+        div.div3 ol {
+            list-style: none;
+            margin: 0px 0px 20px 0px;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+
+        li.li1 {
+            border: none;
+            margin-top: 0px;
+            padding-top: 0px;
+            display: list-item;
+            text-align: -webkit-match-parent;
+            border-bottom: 1px solid #e2e2e2;
+
+
+        }
+
+        article.article {
+            width: 840px;
+            height: 122px;
+            display: flex;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            margin-bottom: 50px;
+
+        }
+
+        div.div31 {
+            width: 697px;
+            height: 122px;
+            flex-basis: 83%;
+            display: block;
+        }
+
+        div.div31 a {
+            width: 639px;
+            height: 122px;
+            text-decoration: none;
+            color: #000;
+            display: flex;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        div.div32 {
+            width: 447px;
+            height: 122px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+        }
+
+        div.div32 h2 {
+            width: 447px;
+            height: 21px;
+            font-size: 1.1875rem;
+            line-height: 1.3125rem;
+            font-weight: 700;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            margin-left: 150px;
+
+        }
+
+        ul.ul1 {
+            width: 447px;
+            height: 18px;
+            line-height: 1.125rem;
+            display: block;
+            font-size: 0.75rem;
+            margin: -2px 0px 7px 0px;
+            list-style: none;
+            margin-left: 112px;
+
+        }
+
+        ul.ul1 li {
+            display: inline;
+            border-right: 1px solid #e2e2e2;
+            padding-right: 10px;
+            margin-right: 10px;
+            color: #999;
+            font-weight: 300;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+
+        p.p1 {
+            width: 425px;
+            height: auto;
+            color: #333;
+            font-weight: 400;
+            font-size: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-top: 13px;
+            margin-left: 150px;
+        }
+
+        p.p2 {
+            width: 425px;
+            height: 12px;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            line-height: 0.75rem;
+            font-weight: 500;
+            margin: 3px 0px 4px;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            margin-left: 150px;
+
+        }
+
+        div.div33 {
+            width: 180px;
+            height: 120px;
+            margin-top: 2px;
+
+        }
+
+        div.div33 img {
+            width: 180px;
+            height: 120px;
+            border: none;
+            overflow: clip;
+            overflow-clip-margin: content-box;
+            margin-top: 10px;
+            margin-left: 200px;
+        }
+
+        footer {
+            width: 72px;
+            height: 122px;
+            display: block;
+            order: -1px;
+            margin-right: 30px;
+            margin-right: 700px;
+            margin-top: -100px;
+        }
+
+        time.time {
+            width: 66px;
+            height: 14px;
+            margin-bottom: 7px;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            font-size: 0.6875rem;
+            line-height: 0.8125rem;
+            font-weight: 400;
+            color: #999;
+
+        }
+
+        ul.ul2 {
+            width: 72px;
+            height: 35px;
+            margin-top: 7px;
+            flex-direction: column;
+            display: flex;
+            list-style: none;
+        }
+
+        ul.ul2 li {
+            border-left: none;
+            width: 72px;
+            height: 18px;
+        }
+
+        ul.ul2 li a.a1 {
+            text-decoration: none;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            font-size: 0.8125rem;
+            line-height: 1rem;
+            font-weight: 400;
+            color: #326891;
+            margin-left: -40px;
+        }
+
+        ul.ul2 li a.a2 {
+            text-decoration: none;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            font-size: 0.8125rem;
+            line-height: 1rem;
+            font-weight: 400;
+            color: #326891;
+            margin-left: -40px;
+        }
+
+        div.div4 {
+            width: 800px;
+            height: 60px;
+            margin: auto;
+            padding: 0px 10px;
+            border: 0px;
+            display: block;
+            font: inherit
+        }
+
+        div.div4 .div41 {
+            width: 780px;
+            height: 45px;
+            display: inline-block;
+            margin: -30px 0px 35px 0px;
+            border-top: none;
+            text-align: center;
+            border: 0px;
+            font: inherit;
+
+        }
+
+        div.div4 .div41 button {
+            width: 130px;
+            height: 30px;
+            font-size: 0.6875rem;
+            line-height: 0.8125rem;
+            display: inline-block;
+            margin: 30px 0px 0px;
+            padding: 9px 9px 7px;
+            background-color: #f8f8f8;
+            color: #000;
+            border: 1px solid #dfdfdf;
+            border-radius: 3px;
+            font-weight: 700;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+        div.div5{
+           width:1084px;
+           height: 451px; 
+           padding: 0px;
+           font: inherit;
+           display: block;
+           margin-top: 100px;
+           border-top: 3px double #e2e2e2;
+           margin-left: 120px;
+
+        }
+        header.header2{
+            width:1084px;
+            height: 44px;
+            display: flex;
+            flex-flow: row;
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+            font: inherit;
+        }
+        header.header2 a{
+            width: 184px;
+            height: 44px;
+            text-decoration: none;
+            color: black;
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+            font: inherit;
+            cursor: pointer;
+        }
+        header.header2 img{
+            width: 200px;
+            height: 35px;
+        }
+        div.diva{
+            width:89.69px;
+            height: 26px;
+            margin: 18px 0px 0px auto;
+            padding: 0px;
+            border: 0px;
+            font: inherit;
+            display: block;
+        }
+        div.diva a{
+            width: 89.69px;
+            height: 13.6px;
+            color: rgb(86,123,149);
+            font-family:'nyt-franklin', Arial, Helvetica, sans-serif ;
+            font-style: normal;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 11px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        div.div6{
+            width:1084px;
+            height: 394px;
+            display: block;
+        }
+        div.div6 section.section1{
+            width: 178px;
+            height: 394px;
+            flex: 1 1 0%;
+            display: block;
+            margin-left: -30px;
+        }
+        div.div6 section.section1 h3{
+            color: rgb(51,51,51);
+            font-size: 13px;
+            font-weight: 700;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif ;
+            height: 25px;
+            width: 150px;
+            line-height: 15px;
+            margin-left: 40px;
+            text-transform: uppercase;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+
+        }
+        div.div6 section.section1 ul{
+            width: 178px;
+            height: 369px;
+            list-style: none;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            padding-inline-start: 40px;
+        }
+        div.div6 section.section1 li{
+            width: 178px;
+            height: 25px;
+            display: list-item;
+            text-align: -webkit-match-parent; 
+            list-style: none; 
+        }
+        div.div6 section.section2{
+            width: 178px;
+            height: 394px;
+            flex: 1 1 0%;
+            display: block;
+            margin-top: -406px;
+            margin-left: 180px;
+        }
+        div.div6 section.section2 h3{
+            color: rgb(51,51,51);
+            font-size: 13px;
+            font-weight: 700;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif ;
+            height: 25px;
+            width: 150px;
+            line-height: 15px;
+            margin: 0px;
+            text-transform: uppercase;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-left: 37px;
+        }
+        div.div6 section.section2 ul{
+            width: 178px;
+            height: 369px;
+            list-style: none;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            padding-inline-start: 40px;
+        }
+        div.div6 section.section2 li{
+            width: 178px;
+            height: 25px;
+            display: list-item;
+            text-align: -webkit-match-parent; 
+            list-style: none; 
+        }
+        div.div6 section.section3{
+            width: 178px;
+            height: 394px;
+            flex: 1 1 0%;
+            display: block;
+            margin-top: -406px;
+            margin-left: 400px;
+        }
+        div.div6 section.section3 h3{
+            color: rgb(51,51,51);
+            font-size: 13px;
+            font-weight: 700;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif ;
+            height: 25px;
+            width: 150px;
+            line-height: 15px;
+            margin: 0px;
+            text-transform: uppercase;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-left: 37px;
+        }
+        div.div6 section.section3 ul{
+            width: 178px;
+            height: 369px;
+            list-style: none;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            padding-inline-start: 40px;
+        }
+        div.div6 section.section3 li{
+            width: 178px;
+            height: 25px;
+            display: list-item;
+            text-align: -webkit-match-parent; 
+            list-style: none; 
+        }
+        div.div6 section.section4{
+            width: 178px;
+            height: 394px;
+            flex: 1 1 0%;
+            display: block;
+            margin-top: -406px;
+            margin-left: 600px;
+        }
+        div.div6 section.section4 h3{
+            color: rgb(51,51,51);
+            font-size: 13px;
+            font-weight: 700;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif ;
+            height: 25px;
+            width: 150px;
+            line-height: 15px;
+            margin: 0px;
+            text-transform: uppercase;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-left:37px ;
+        }
+        div.div6 section.section4 ul{
+            width: 178px;
+            height: 369px;
+            list-style: none;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            padding-inline-start: 40px;
+        }
+        div.div6 section.section4 li{
+            width: 178px;
+            height: 25px;
+            display: list-item;
+            text-align: -webkit-match-parent; 
+            list-style: none; 
+        }
+        div.div6 section.section5{
+            width: 178px;
+            height: 394px;
+            flex: 1 1 0%;
+            display: block;
+            margin-top: -406px;
+            margin-left: 800px;
+        }
+        div.div6 section.section5 h3{
+            color: rgb(51,51,51);
+            font-size: 13px;
+            font-weight: 700;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif ;
+            height: 25px;
+            width: 150px;
+            line-height: 15px;
+            margin: 0px;
+            text-transform: uppercase;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-left:37px ;
+        }
+        div.div6 section.section5 ul{
+            width: 178px;
+            height: 369px;
+            list-style: none;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            padding-inline-start: 40px;
+        }
+        div.div6 section.section5 li{
+            width: 178px;
+            height: 25px;
+            display: list-item;
+            text-align: -webkit-match-parent; 
+            list-style: none; 
+        }
+        div.div51{
+            width: 194px;
+            height: 394px;
+            padding-left: 15px;
+            flex: 1 1 0%;
+            border-left: 1px solid rgb(226, 226, 226);
+            margin-top: -406px;
+            margin-left: 1000px;
+            
+        }
+        div.div51 h3{
+            color: rgb(51,51,51);
+            font-size: 13px;
+            font-weight: 700;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif ;
+            height: 25px;
+            width: 150px;
+            line-height: 15px;
+            margin: 0px;
+            text-transform: uppercase;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+
+        }
+        div.div51 .l1{
+            width: 178px;
+            height: 122px;
+            list-style: none;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            padding-inline-start: 40px;
+            margin-left:-45px;
+            
+        }
+        div.div51 .l1 li{
+            width: 178px;
+            height: 26px;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            display: list-item;
+            list-style: none;
+            text-align: -webkit-match-parent; 
+        }
+
+        div.div51 .l2{
+            width: 178px;
+            height: 69px;
+            list-style: none;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            padding-inline-start: 40px;
+            margin-left:-45px;
+            
+
+        }
+        div.div51 .l2 li{
+            width: 178px;
+            height: 26px;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            display: list-item;
+            list-style: none;
+            text-align: -webkit-match-parent; 
+            font-size: 6px;
+        }
+        div.div51 .l3{
+            width: 178px;
+            height:149px;
+            list-style: none;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            padding-inline-start: 40px;
+            border-top: 1px solid rgb(226, 226, 226);
+            padding: 10px 0px 0px;
+            margin: 2px 0px 0px;
+        }
+        div.div51 .l3 li{
+            width: 178px;
+            height: 26px;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            display: list-item;
+            list-style: none;
+            text-align: -webkit-match-parent; 
+        }
+        div.div6 a{
+            text-decoration: none;
+            color: #000;
+            display: inline-block;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            width: 150px;
+            font-size: 14px;
+            font-weight: 500;
+            height: 23px;
+            line-height: 16px;
+        }
+        div.div51 .l1 a{
+            text-decoration: none;
+            color: #000;
+            display: inline-block;
+            font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            width: 150px;
+            font-size: 16px;
+            font-weight: 700;
+            height: 25px;
+            line-height: 15px;  
+            padding-bottom: 0px;
+        }
+        footer.footer2{
+            width: 1050px;
+            height: 100px;
+            padding: 0 3% 9px;
+            font-size: 11px;
+            text-align: center;
+            display: block;
+            margin-top: 100px;
+            border-top: 1px solid #e2e2e2;
+            margin-left: 120px;
+            
+        }
+        ul.l4{
+            width: 177px;
+            height: 11px;
+            display: inline-block;
+            list-style: none;
+            margin-bottom: 15px;
+            padding: 0px;
+        }
+        ul.l4 li{
+            width:177px;
+            height: 11px;
+            list-style: none;
+        }
+        footer.footer2 a{
+            color: #666;
+            font-family:'nyt-franklin', Arial, Helvetica, sans-serif ;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        table.t5{
+            width: 960px;
+            height: 20px;
+            display: inline-block;
+            list-style: none;
+            margin-bottom: 15px;
+            padding: 0px;
+            line-height: 8px;
+            margin-left: -80px;
+        }
+
+        table.t5 a{
+            
+            margin-right: 10px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="divapp">
+        <div class="divhead">
+            <header>
+                <div class="mydiv1">
+                    <button type="menu" class="mybutton1">
+                        <img src="menuicon.png">
+                    </button>
+                    <button type="button" class="mybutton2">
+                        <img src="searchimg.png">
+                    </button>
+                    <input type="text" placeholder="SEARCH" class="input1">
+                    <button type="submit" class="go">
+                        <a href="https://www.nytimes.com/search">
+                            Go
+                        </a>
+                    </button>
+                </div>
+                <div class="mydiv2">
+                    <a href="https://www.nytimes.com/">
+                        <img src="img1.png">
+                    </a>
+                </div>
+                <div class="mydiv3">
+                    <button type="button" class="button3">
+                        <a
+                            href="https://www.nytimes.com/subscription?campaignId=9YU8R&redirect_uri=https%3A%2F%2Fwww.nytimes.com%2Freviews%2Fmovies">
+                            SUBSCRIBE FOR $0.25/WEEK
+                        </a>
+                    </button>
+                    <button type="button" class="button4">
+                        <a
+                            href="https://myaccount.nytimes.com/auth/login?response_type=cookie&client_id=vi&redirect_uri=https%3A%2F%2Fwww.nytimes.com%2Fsubscription%2Fonboarding-offer%3FcampaignId%3D7JFJX%26EXIT_URI%3Dhttps%253A%252F%252Fwww.nytimes.com%252Freviews%252Fmovies&asset=masthead">
+                            LOG IN
+                        </a>
+                    </button>
+
+                </div>
+                <div class="divt">
+                    <div class="mydiv4">
+                        <a href="https://www.nytimes.com/section/movies">
+                            Movies
+                        </a>
+                    </div>
+                    <div class="mydiv5">
+                        <div class="divh">
+                            <h1>
+                                Movie Reviews
+                            </h1>
+                        </div>
+                        <h2>
+                            <span>Our film critics on blockbusters, independents and everything in between.</span>
+                        </h2>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="div1">
+            <form action="">
+                <div class="div12">
+                    <img src="search1.jpg">
+                    <input type="text" placeholder="search">
+                </div>
+                <div class="div2">
+                    <div class="div22">
+                        <select class="select">
+                            <option>MPAA Rating</option>
+                            <option>──</option>
+                            <option>G</option>
+                            <option>PG</option>
+                            <option>PG-13</option>
+                            <option>R</option>
+                            <option>NC-17</option>
+                            <option>Not Rated</option>
+                        </select>
+                        <div class="divs">
+                            <div class="divc"></div>
+                        </div>
+                    </div>
+                    <div class="div23">
+                        <select>
+                            <option>Genre</option>
+                            <option>──</option>
+                            <option>Action</option>
+                            <option>Adult</option>
+                            <option>Adventure</option>
+                            <option>Animation</option>
+                            <option>Biography</option>
+                            <option>Comedy</option>
+                            <option>Crime</option>
+                            <option>Documentary</option>
+                            <option>Drama</option>
+                            <option>Family</option>
+                            <option>Fantasy</option>
+                            <option>Film-Noir</option>
+                            <option>History</option>
+                            <option>Horror</option>
+                            <option>Music</option>
+                            <option>Musical</option>
+                            <option>Mystery</option>
+                            <option>News</option>
+                            <option>Romance</option>
+                            <option>Sci-Fi</option>
+                            <option>Short</option>
+                            <option>Sport</option>
+                            <option>Thriller</option>
+                            <option>War</option>
+                            <option>Western</option>
+                        </select>
+                        <div class="divs">
+                            <div class="divc"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div24">
+                    <input type="checkbox">
+                    <img src="checkbox.jpg">
+                    <span>NYT Critic’s Pick</span>
+                </div>
+        </div>
+        </form>
+
+    </div>
+    <div class="div3">
+        <ol class="ol">
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/13/movies/taylor-swift-eras-movie-review.html">
+                            <div class="div32">
+                                <h2>Taylor Swift: The Eras Tour</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Music
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Sam Wrench
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    Swift’s cultural phenomenon arrives on the big screen with lots of little
+                                    revelations, along with some what-could-have-beens.
+                                </p>
+                                <p class="p2">
+                                    By Wesley Morris
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s1.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 13, 2023">Oct. 13, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/13/movies/taylor-swift-eras-movie-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt28814949?ref_=ref_ext_NYT">Find
+                                    tickets</a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/12/movies/the-road-dance-review.html">
+                            <div class="div32">
+                                <h2> The Road Dance</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Drama
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Richie Adams
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    Based on a Scottish best seller, the movie is a standard period drama that arrives
+                                    at hard truths with a hammy delivery.
+                                </p>
+                                <p class="p2">
+                                    By Beatrice Loayza
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s2.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 12, 2023">Oct. 12, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/12/movies/plan-c-review.html?rref=collection%2Fcollection%2Fmovie-guide">Read
+                                    Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt24137440?ref_=ref_ext_NYT">Find
+                                    tickets</a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/12/movies/plan-c-review.html">
+                            <div class="div32">
+                                <h2>Plan C</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Documentary
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Tracy Droz Tragos
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    In this documentary by Tracy Droz Tragos, each of the film’s subjects considers how
+                                    far past the line of legal comfort.
+                                </p>
+                                <p class="p2">
+                                    By Teo Bugbee
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s3.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 12, 2023">Oct. 12, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/12/movies/plan-c-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt24137440?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/12/movies/reality-winner-review.html">
+                            <div class="div32">
+                                <h2>Reality Winner</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Music
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Sonia Kennebeck
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    Sonia Kennebeck’s documentary unpacks the circumstances surrounding its subject, but
+                                    fails to crack her complexity.
+                                </p>
+                                <p class="p2">
+                                    By Natalia Winkelman
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s4.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 12, 2023">Oct. 12, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/12/movies/reality-winner-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt12821446?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/12/movies/the-mission-review.html">
+                            <div class="div32">
+                                <h2>The Mission</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        PG-13
+                                    </li>
+                                    <li>
+                                        Documentary
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Amanda McBaine, Jesse Moss
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    A documentary tries to bring context to the actions of John Allen Chau, an American
+                                    missionary who was killed in 2018.
+                                </p>
+                                <p class="p2">
+                                    By Ben Kenigsberg
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s5.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 12, 2023">Oct. 12, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/12/movies/the-burial-review.html?rref=collection%2Fcollection%2Fmovie-guide">Read
+                                    Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt28097834?ref_=ref_ext_NYT">Find
+                                    tickets</a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/12/movies/the-burial-review.html">
+                            <div class="div32">
+                                <h2>The Burial</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        R
+                                    </li>
+                                    <li>
+                                        Drama
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Maggie Betts
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    Jamie Foxx and Tommy Lee Jones deliver bravura performances in this Maggie Betts
+                                    film about a funeral-home.
+                                </p>
+                                <p class="p2">
+                                    By Glenn Kenny
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s6.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 12, 2023">Oct. 12, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/12/movies/the-burial-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt5648882?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/12/movies/divinity-review.html">
+                            <div class="div32">
+                                <h2>Divinity</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Sci-Fi, Thriller
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Eddie Alcazar
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    An immortality drug causes social disruption in this ludicrously dystopian sci-fi
+                                    experiment.
+                                </p>
+                                <p class="p2">
+                                    By Jeannette Catsoulis
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s7.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 12, 2023">Oct. 12, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/12/movies/divinity-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt15444046?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/12/movies/anatomy-of-a-fall-review.html">
+                            <div class="div32">
+                                <h2>Anatomy of a Fall</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        R
+                                    </li>
+                                    <li>
+                                        Crime, Drama, Thriller
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Justine Triet
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    Did a writer kill her husband? In this cerebral murder trial drama by the director
+                                    Justine Triet.
+                                </p>
+                                <p class="p2">
+                                    By Amy Nicholson
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s8.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 12, 2023">Oct. 12, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/12/movies/anatomy-of-a-fall-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt17009710?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/12/movies/in-my-mothers-skin-review.html">
+                            <div class="div32">
+                                <h2>In My Mother’s Skin</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Action, Fantasy, Horror, Thriller, War
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Kenneth Dagatan
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    Kenneth Dagatan’s new folk horror film acts as a cautionary tale about putting one’s
+                                    fate into the hands of the enemy.
+                                </p>
+                                <p class="p2">
+                                    By Claire Shaffer
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s9.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 12, 2023">Oct. 12, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/12/movies/in-my-mothers-skin-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt20413870?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/10/movies/no-accident-review-charlottesville.html">
+                            <div class="div32">
+                                <h2>No Accident</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Documentary
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Kristi Jacobson
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    A documentary chronicles the lawsuit filed against the leaders of the violent 2017
+                                    white supremacist rally in Charlottesville.
+                                </p>
+                                <p class="p2">
+                                    By Nicolas Rapold
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s10.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 10, 2023">Oct. 10, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/10/movies/no-accident-review-charlottesville.html?rref=collection%2Fcollection%2Fmovie-guide">Read
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt28798353?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/09/movies/the-mill-review.html">
+                            <div class="div32">
+                                <h2>The Mill</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Drama, Mystery, Sci-Fi, Thriller
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Sean King O'Grady
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    This spare dystopian thriller offers a serviceable but mostly unimaginative satire
+                                    of a capitalist nightmare.
+                                </p>
+                                <p class="p2">
+                                    By Brandon Yu
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s11.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 9, 2023">Oct. 9, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/09/movies/the-mill-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt26569323?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a
+                            href="https://www.nytimes.com/2023/10/08/movies/last-stop-larrimah-review-the-unusual-suspects.html">
+                            <div class="div32">
+                                <h2>Last Stop Larrimah</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Documentary, Crime, Mystery
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Thomas Tancred
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    This true-crime documentary investigates a murder case in a tiny Australian town,
+                                    showcasing its brash inhabitants.
+                                </p>
+                                <p class="p2">
+                                    By Nicolas Rapold
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s12.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 8, 2023">Oct. 8, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/08/movies/last-stop-larrimah-review-the-unusual-suspects.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt26081866?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/colette-and-justin-review.html">
+                            <div class="div32">
+                                <h2>Colette and Justin</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        NYT Critic’s Pick
+                                    </li>
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Documentary
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Alain Kassanda
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    In a new documentary, a filmmaker turns his lens on his grandparents during a
+                                    pivotal moment in the history.
+                                </p>
+                                <p class="p2">
+                                    By Concepción de León
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s13.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/colette-and-justin-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+
+                                    Read Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt22872868?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/dicks-the-musical-review.html">
+                            <div class="div32">
+                                <h2>Dicks: The Musical</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        R
+                                    </li>
+                                    <li>
+                                        Comedy, Musical
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Larry Charles
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    Larry Charles’s musical comedy is so hellbent on being outrageous that it just ends
+                                    up being tiresome. </p>
+                                <p class="p2">
+                                    By Elisabeth Vincentelli
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s14.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/dicks-the-musical-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt7130916?ref_=ref_ext_NYT">Find
+                                    tickets</a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/shadows-in-the-city-review.html">
+                            <div class="div32">
+                                <h2>Shadows in the City</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Drama, Horror
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Ari M. Roussimoff
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    The director Ari M. Roussimoff’s black-and-white homage to the downtown crowd gets a
+                                    raw screening at the Museum . </p>
+                                <p class="p2">
+                                    By Glenn Kenny
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s15.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/shadows-in-the-city-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt0180995?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a
+                            href="https://www.nytimes.com/2023/10/05/movies/worlds-greatest-sinner-victims-of-sin-review.html">
+                            <div class="div32">
+                                <h2>Victims of Sin</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        NYT Critic’s Pick
+                                    </li>
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Crime, Drama, Musical, Thriller
+                                    </li>
+
+                                    <li style="border-right: none;">
+                                        Directed by Emilio Fernández
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    Timothy Carey’s erratically brilliant “The World’s Greatest Sinner” and Emilio
+                                    Fernández’s redemption melodrama. </p>
+                                <p class="p2">
+                                    By Nicolas Rapold
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s16 17.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/worlds-greatest-sinner-victims-of-sin-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt0043115?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a
+                            href="https://www.nytimes.com/2023/10/05/movies/worlds-greatest-sinner-victims-of-sin-review.html">
+                            <div class="div32">
+                                <h2>The World's Greatest Sinner</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        NYT Critic’s Pick
+                                    </li>
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Drama
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Timothy Carey
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    Timothy Carey’s erratically brilliant “The World’s Greatest Sinner” and Emilio
+                                    Fernández’s redemption melodrama </p>
+                                <p class="p2">
+                                    By Nicolas Rapold
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s16 17.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct.5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/worlds-greatest-sinner-victims-of-sin-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt0056703?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/when-evil-lurks-review.html">
+                            <div class="div32">
+                                <h2>When Evil Lurks</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Horror
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Demián Rugna
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    Humans become bloodthirsty demons in a shockingly grisly new contagion horror film
+                                    from Argentina. </p>
+                                <p class="p2">
+                                    By Erik Piepenburg
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s18.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/when-evil-lurks-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt16300962?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/she-came-to-me-review.html">
+                            <div class="div32">
+                                <h2>She Came to Me</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        R
+                                    </li>
+                                    <li>
+                                        Comedy, Drama, Romance
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Rebecca Miller
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    A love-triangle comedy from Rebecca Miller, starring Peter Dinklage, Marisa Tomei
+                                    and Anne Hathaway. </p>
+                                <p class="p2">
+                                    By Lisa Kennedy
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s19.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/she-came-to-me-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt6689014?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/totally-killer-review.html">
+                            <div class="div32">
+                                <h2>Totally Killer</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        R
+                                    </li>
+                                    <li>
+                                        Comedy, Horror
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Nahnatchka Khan
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    This teen slasher comedy with a time-traveling twist can’t muster up enough charisma
+                                    to make its mash-up concept sing.
+                                </p>
+                                <p class="p2">
+                                    By Brandon Yu
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s20.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/totally-killer-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt11426232?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/the-royal-hotel-review.html">
+                            <div class="div32">
+                                <h2>The Royal Hotel</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        NYT Critic’s Pick
+                                    </li>
+                                    <li>
+                                        R
+                                    </li>
+                                    <li>
+                                        Thriller
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Kitty Green
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    Two young women struggle to handle the obstreperous patrons of a remote Australian
+                                    pub in this coolly calibrated thriller.
+                                </p>
+                                <p class="p2">
+                                    By Jeannette Catsoulis
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s21.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/the-royal-hotel-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt18363072?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/more-than-ever-review.html">
+                            <div class="div32">
+                                <h2>More Than Ever</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Drama, Romance
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Emily Atef
+                                    </li>
+
+                                </ul>
+                                <p class="p1">
+                                    This middlebrow weepie about a woman dying from a rare lung disease stars Vicky
+                                    Krieps and Gaspard Ulliel in his final role.
+                                </p>
+                                <p class="p2">
+                                    By Beatrice Loayza
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s22.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/more-than-ever-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt14275050?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/my-love-affair-with-marriage-review.html">
+                            <div class="div32">
+                                <h2>My Love Affair with Marriage</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        NYT Critic’s Pick
+                                    </li>
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Animation, Comedy, Drama, Musical
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Signe Baumane
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    This animated musical about a young woman’s sexual and romantic awakening uses a
+                                    gloriously tactile aesthetic.
+                                </p>
+                                <p class="p2">
+                                    By Natalia Winkelman
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s23.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/my-love-affair-with-marriage-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt6435164?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/foe-review.html">
+                            <div class="div32">
+                                <h2>Foe</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        R
+                                    </li>
+                                    <li>
+                                        Drama, Sci-Fi, Thriller
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Garth Davis
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    Saoirse Ronan and Paul Mescal play a farm couple with a less-than-idyllic marriage
+                                    in the Midwest of the future.
+                                </p>
+                                <p class="p2">
+                                    By Ben Kenigsberg
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s24.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/foe-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt8258502?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/joan-baez-i-am-a-noise-review.html">
+                            <div class="div32">
+                                <h2>Joan Baez I Am a Noise</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        NYT Critic’s Pick
+                                    </li>
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Documentary, Biography, Music
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Miri Navasky, Maeve O'Boyle, Karen O'Connor
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    A new documentary about the folk singer and activist Joan Baez contains a gold mine
+                                    of archival materials.
+                                </p>
+                                <p class="p2">
+                                    By Chris Azzopardi
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s25.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/joan-baez-i-am-a-noise-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt26594061?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/mister-organ-review.html">
+                            <div class="div32">
+                                <h2>Mister Organ</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        NYT Critic’s Pick
+                                    </li>
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Documentary
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by David Farrier
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    A documentarian’s investigation into peculiar events outside a New Zealand antiques
+                                    shop turns into a horror story.
+                                </p>
+                                <p class="p2">
+                                    By Glenn Kenny
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s26.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/mister-organ-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt21996838?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/cat-person-review.html">
+                            <div class="div32">
+                                <h2>Mister Organ</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        NYT Critic’s Pick
+                                    </li>
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Documentary
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by David Farrier
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    A documentarian’s investigation into peculiar events outside a New Zealand antiques
+                                    shop turns into a horror story.
+                                </p>
+                                <p class="p2">
+                                    By Glenn Kenny
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s27.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/mister-organ-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt21996838?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/the-caine-mutiny-court-martial-review.html">
+                            <div class="div32">
+                                <h2>The Caine Mutiny Court-Martial</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        NYT Critic’s Pick
+                                    </li>
+                                    <li>
+                                        Not Rated
+                                    </li>
+                                    <li>
+                                        Drama, War
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by William Friedkin
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    William Friedkin’s final film, an adaptation of the Herman Wouk play, offers a
+                                    bracing demonstration.
+                                </p>
+                                <p class="p2">
+                                    By Ben Kenigsberg
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s28.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/the-caine-mutiny-court-martial-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt24249946?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/05/movies/fair-play-review.html">
+                            <div class="div32">
+                                <h2>Fair Play</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        NYT Critic’s Pick
+                                    </li>
+                                    <li>
+                                        R
+                                    </li>
+                                    <li>
+                                        Drama, Mystery, Thriller
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Chloe Domont
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    One couple can’t achieve work-life balance is in this impeccable debut feature from
+                                    Chloe Domont.
+                                </p>
+                                <p class="p2">
+                                    By Amy Nicholson
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s29.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 5, 2023">Oct. 5, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/05/movies/fair-play-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt16304446?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/10/04/movies/the-exorcist-believer-review.html">
+                            <div class="div32">
+                                <h2>The Exorcist: Believer</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        R
+                                    </li>
+                                    <li>
+                                        Horror
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by David Gordon Green
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    Two young girls bring something nasty home from the woods in this too-busy,
+                                    uninvolving possession movie.
+                                </p>
+                                <p class="p2">
+                                    By Jeannette Catsoulis
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s30.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Oct. 4, 2023">Oct. 4, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/10/04/movies/the-exorcist-believer-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review</a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt12921446?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="li1" style="border-bottom: none;">
+                <article class="article">
+                    <div class="div31">
+                        <a href="https://www.nytimes.com/2023/09/28/movies/saw-x-review.html">
+                            <div class="div32">
+                                <h2>Saw X</h2>
+                                <ul class="ul1">
+                                    <li>
+                                        R
+                                    </li>
+                                    <li>
+                                        Horror, Mystery, Thriller
+                                    </li>
+                                    <li style="border-right: none;">
+                                        Directed by Kevin Greutert
+                                    </li>
+                                </ul>
+                                <p class="p1">
+                                    The 10th movie in this horror series gives the fans what they want.
+                                </p>
+                                <p class="p2">
+                                    By Beatrice Loayza
+                                </p>
+
+                            </div>
+                            <div class="div33">
+                                <img src="s31.jpg">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <footer>
+                        <time class="time" content="Sept.28, 2023">Sept. 28, 2023</time>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a1"
+                                    href="https://www.nytimes.com/2023/09/28/movies/saw-x-review.html?rref=collection%2Fcollection%2Fmovie-guide">
+                                    Read Review
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a2"
+                                    href="https://www.imdb.com/showtimes/title/tt21807222?ref_=ref_ext_NYT">Find
+                                    tickets
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+
+        </ol>
+        <div class="div4">
+            <div class="div41">
+                <button type="button">SHOW MORE</button>
+            </div>
+        </div>
+    </div>
+    <div class="div5">
+        <header class="header2">
+
+            <a href="https://www.nytimes.com/">
+                <img src="img1.png">
+            </a>
+            <div class="diva">
+                <a href="https://www.nytimes.com/">
+                    Go to Home Page
+                </a>
+            </div>
+
+        </header>
+        <div class="div6">
+            <section class="section1">
+                <h3>NEWS</h3>
+                <ul>
+                    <li><a href="https://www.nytimes.com/">Home Page</a></li>
+                    <li><a href="https://www.nytimes.com/">World</a></li>
+                    <li><a href="https://www.nytimes.com/">Coronavirus</a></li>
+                    <li><a href="https://www.nytimes.com/">U.S.</a></li>
+                    <li><a href="https://www.nytimes.com/">Politics</a></li>
+                    <li><a href="https://www.nytimes.com/">New Work</a></li>
+                    <li><a href="https://www.nytimes.com/">Business</a></li>
+                    <li><a href="https://www.nytimes.com/">Tech</a></li>
+                    <li><a href="https://www.nytimes.com/">Science</a></li>
+                    <li><a href="https://www.nytimes.com/">Sports</a></li>
+                    <li><a href="https://www.nytimes.com/">Wildfire Tracker</a></li>
+                    <li><a href="https://www.nytimes.com/">Obituries</a></li>
+                    <li><a href="https://www.nytimes.com/">Today's Paper</a></li>
+                    <li><a href="https://www.nytimes.com/">corrections</a></li>
+                    <li><a href="https://www.nytimes.com/">Trending</a></li>
+                </ul>
+            </section>
+            <section class="section2">
+                <h3>OPINION</h3>
+                <ul>
+                    <li><a href="https://www.nytimes.com/section/opinion">Today's Opinion</a></li>
+                    <li><a href="https://www.nytimes.com/section/opinion">Columists</a></li>
+                    <li><a href="https://www.nytimes.com/section/opinion">Editorials</a></li>
+                    <li><a href="https://www.nytimes.com/section/opinion">Guest Essays</a></li>
+                    <li><a href="https://www.nytimes.com/section/opinion">Letters</a></li>
+                    <li><a href="https://www.nytimes.com/section/opinion">Sunday Opinion</a></li>
+                    <li><a href="https://www.nytimes.com/section/opinion">Opinion Video</a></li>
+
+
+                </ul>
+            </section>
+            <section class="section3">
+                <h3>ARTS</h3>
+                <ul>
+                    <li><a href="https://www.nytimes.com/section/arts">Today's Arts</a></li>
+                    <li><a href="https://www.nytimes.com/section/arts">Art & Design</a></li>
+                    <li><a href="https://www.nytimes.com/section/arts">Books</a></li>
+                    <li><a href="https://www.nytimes.com/section/arts">BestSellers BookList</a></li>
+                    <li><a href="https://www.nytimes.com/section/arts">Dance</a></li>
+                    <li><a href="https://www.nytimes.com/section/arts">Movies</a></li>
+                    <li><a href="https://www.nytimes.com/section/arts">Music</a></li>
+                    <li><a href="https://www.nytimes.com/section/arts">Pop Culture</a></li>
+                    <li><a href="https://www.nytimes.com/section/arts">Television</a></li>
+                    <li><a href="https://www.nytimes.com/section/arts">Theater</a></li>
+                    <li><a href="https://www.nytimes.com/section/arts">Video:Arts</a></li>
+
+                </ul>
+            </section>
+            <section class="section4">
+                <h3>LIVING</h3>
+                <ul>
+                    <li><a href="https://www.nytimes.com/section/automobiles">Automative</a></li>
+                    <li><a href="https://www.nytimes.com/section/automobiles">Games</a></li>
+                    <li><a href="https://www.nytimes.com/section/automobiles">Education</a></li>
+                    <li><a href="https://www.nytimes.com/section/automobiles">Food</a></li>
+                    <li><a href="https://www.nytimes.com/section/automobiles">Health</a></li>
+                    <li><a href="https://www.nytimes.com/section/automobiles">Jobs</a></li>
+                    <li><a href="https://www.nytimes.com/section/automobiles">Love</a></li>
+                    <li><a href="https://www.nytimes.com/section/automobiles">Magazine</a></li>
+                    <li><a href="https://www.nytimes.com/section/automobiles">Paranting</a></li>
+                    <li><a href="https://www.nytimes.com/section/automobiles">Real Estate</a></li>
+                    <li><a href="https://www.nytimes.com/section/automobiles">Style</a></li>
+                    <li><a href="https://www.nytimes.com/section/automobiles">T Magazine</a></li>
+                    <li><a href="https://www.nytimes.com/section/automobiles">Traval</a></li>
+                </ul>
+            </section>
+            <section class="section5">
+                <h3>MORE</h3>
+                <ul>
+                    <li><a href="https://www.nytimes.com/section/reader-center">Reader Center</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">The Athletic</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">Wirecultter</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">Cooking</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">Headway</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">Live Events</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">The Learning Network</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">Podcasts</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">Video</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">Grapics</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">TimesMachine</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">Time Store</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">Manage My Account</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">Gift Articles</a></li>
+                    <li><a href="https://www.nytimes.com/section/reader-center">NYTLicensing</a></li>
+                </ul>
+            </section>
+            <div class="div51">
+                <h3>SUBSCRIBE</h3>
+                <ul class="l1" >
+                    <li><a
+                            href="https://subscribe.inyt.com/?utm_source=NYTimes.com&utm_medium=web&utm_campaign=footer&campaignId=6UXKJ">
+                          <img src="imgi1.jpg" alt="" style="width: 15px; height: 15px;">
+                          Home delivery
+                        </a></li>
+                    <li><a
+                            href="https://subscribe.inyt.com/?utm_source=NYTimes.com&utm_medium=web&utm_campaign=footer&campaignId=6UXKJ">
+                            <img src="imgi2.jpg" alt="" style="width: 15px; height: 15px;">
+                            Digital Subscriptions</a></li>
+                    <li><a
+                            href="https://subscribe.inyt.com/?utm_source=NYTimes.com&utm_medium=web&utm_campaign=footer&campaignId=6UXKJ">
+                            <img src="imgi3.jpg" alt=""style="width: 15px; height: 15px;">
+                            Games</a>
+                    </li>
+                    <li><a
+                            href="https://subscribe.inyt.com/?utm_source=NYTimes.com&utm_medium=web&utm_campaign=footer&campaignId=6UXKJ">
+                            <img src="imgi4.jpg" alt="" style="width: 15px; height: 15px;">
+                            Cooking</a>
+                    </li>
+                </ul>
+                <ul class="l2">
+                    <li><a href="https://www.nytimes.com/newsletters">Email Newsletters</a></li>
+                    <li><a href="https://www.nytimes.com/newsletters">Corporate Subscriptions</a></li>
+                    <li><a href="https://www.nytimes.com/newsletters">Education Rate</a></li>
+
+                </ul>
+                <ul class="l3">
+                    <li><a href="https://help.nytimes.com/hc/en-us/sections/115003859548-Apps">Mobile Applations</a>
+                    </li>
+                    <li><a href="https://help.nytimes.com/hc/en-us/sections/115003859548-Apps">Replica</a></li>
+                    <li><a href="https://help.nytimes.com/hc/en-us/sections/115003859548-Apps">International</a></li>
+                    <li><a href="https://help.nytimes.com/hc/en-us/sections/115003859548-Apps">Canada</a></li>
+                    <li><a href="https://help.nytimes.com/hc/en-us/sections/115003859548-Apps">Español</a></li>
+                    <li><a href="https://help.nytimes.com/hc/en-us/sections/115003859548-Apps">中文网</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer2">
+       <ul class="l4">
+         
+       </ul>
+       <table  class="t5">
+       <tr>
+        <td>
+            <a href="https://help.nytimes.com/hc/en-us/articles/115014792127-Copyright-notice">
+                © <span>2023</span>
+                <span>The New York Times Company</span>
+            </a>
+        </td>
+         <td><a href="https://www.nytco.com/">NYTCo</a></td>
+         <td><a href="https://www.nytco.com/">Contact Us</a></td>
+         <td><a href="https://www.nytco.com/">Accessibility</a></td>
+         <td><a href="https://www.nytco.com/">Work with us</a></td>
+         <td><a href="https://www.nytco.com/">Advertise</a></td>
+         <td><a href="https://www.nytco.com/">T Brand Studio</a></td>
+         <td><a href="https://www.nytco.com/">Your Ad Choices</a></td>
+         <td><a href="https://www.nytco.com/">Your Ad Choices</a></td>
+         <td><a href="https://www.nytco.com/">Your Ad Choices</a></td>
+         <td><a href="https://www.nytco.com/">Terms of Sale</a></td>
+         <td><a href="https://www.nytco.com/">Site Map</a></td>
+         <td><a href="https://www.nytco.com/">Help</a></td>
+         <td><a href="https://www.nytco.com/">Subscriptions</a></td>
+       </tr>
+    </table>
+    </footer>
+            </div>
+</body>
+
+</html>
